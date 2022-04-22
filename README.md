@@ -1,2 +1,2 @@
-# dio-rep
-Repositório destinado para salvar o meu progresso na plataforma Dio
+# Repositório Dio
+Tem a finalidade de salvar meu progresso nos bootcamps e atividades referentes a plataforma Dio
