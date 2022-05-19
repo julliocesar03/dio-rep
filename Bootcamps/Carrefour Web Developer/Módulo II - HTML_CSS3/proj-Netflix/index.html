@@ -32,7 +32,7 @@
     </header>
 
     <main>
-        <div class="filme-principal">
+        <div id="div1" class="show">
             <div class="container">
                 <h3 class="titulo">HOUSE OF CARDS</h3>
                 <p class="descricao">
@@ -50,12 +50,31 @@
                 </div>            
             </div>
         </div>
+
+        <div id="div2" class="hidden">
+            <div class="container">
+                <h3 class="titulo">CARANGUEJO NEGRO</h3>
+                <p class="descricao">
+                    Para acabar com uma guerra apocalíptica e salvar a filha, uma militar embarca em uma missão desesperada: atravessar o mar congelado levando uma carga ultrassecreta.
+                </p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>    
+                </div>            
+            </div>
+        </div>
     </main>
 
     <div class="carrossel-filmes">
         <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img class="box-file item1" src="img/images/mini1.jpg">                
+            <div id="item1" class="hidden">
+                <img class="box-file item1" src="img/images/mini1.jpg" onclick = "replace('div1','div2')">                
             </div>
             <div class="item">
                 <img class="box-file" src="img/images/mini2.jpg">                
@@ -91,6 +110,13 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+
+    <script>
+        function replace( hide, show ) {
+            document.getElementsByClassName(hide).style.opacity="100";
+            document.getElementsByClassName(show).style.opacity="0";
+        }
+    </script>
 
 </body>
 </html>
